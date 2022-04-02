@@ -1,7 +1,19 @@
 {
     "baseUrl": "https://partnerforsqa.dev.uniteliving.com",
     "watchForFileChanges": false,
-    "defaultCommandTimeout": 10000
+    "defaultCommandTimeout": 10000,
+    "pageLoadTimeout":60000,
+    "requestTimeout":5000,
+    "slowTestThreshold": 5250,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+    "charts": true,
+    "overwrite": true,
+    "html": true,
+    "json": false,
+    "reportDir": "cypress/report/mochawesome-report",
+    "screenshotOnRunFailure": true
+}
 }
     
 
